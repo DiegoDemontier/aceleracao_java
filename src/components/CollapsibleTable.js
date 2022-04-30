@@ -38,7 +38,7 @@ export default function CollapsibleTable({ data, type }) {
   return (
     <TableContainer component={Paper}>
       <div className="info">
-        <h3>Total de exercícios: {total}</h3>
+        <h3>Total de desafios: {total}</h3>
         <h3>Total acima de 80%: {completed}</h3>
       </div>
       <Table aria-label="collapsible table">
@@ -47,7 +47,7 @@ export default function CollapsibleTable({ data, type }) {
             <TableCell />
             <TableCell>Desafio</TableCell>
             <TableCell>Tipo</TableCell>
-            <TableCell align="right">Quantidade de exercicios</TableCell>
+            <TableCell align="right">Quantidade de exercícios</TableCell>
             <TableCell align="right">Quantidade acima de 80%</TableCell>
           </TableRow>
         </TableHead>
