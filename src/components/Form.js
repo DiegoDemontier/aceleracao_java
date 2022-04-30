@@ -15,9 +15,9 @@ export default function BasicTextFields({ setUser, setType }) {
   }
 
   const currencies = [
-    { value: 'todos', label: 'Monstrar todos' },
-    { value: 'Exercício', label: 'Mostrar só exercícios' },
-    { value: 'Agregador', label: 'Monstrar só desafios' }
+    { value: 'todos', label: 'Todos' },
+    { value: 'Exercício', label: 'Exercício' },
+    { value: 'Agregador', label: 'Desafio Agregador' }
   ];
 
   return (
@@ -43,7 +43,7 @@ export default function BasicTextFields({ setUser, setType }) {
       <TextField
           id="outlined-select-currency"
           select
-          label="Select"
+          label="Selecionar tipo"
           disabled={ true && on }
           value={currency}
           onChange={(e) => {setCurrency(e.target.value)}}
