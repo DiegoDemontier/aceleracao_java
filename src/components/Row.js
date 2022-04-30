@@ -3,8 +3,7 @@ import { Box, Collapse, IconButton, Table, TableBody, TableCell, TableHead, Tabl
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
-export default function Row(props) {
-  const { row } = props;
+export default function Row({ row, setQuantity }) {
   const [open, setOpen] = React.useState(false);
   const exercisesDone = row.exercicios.filter(exercicio => exercicio.porcent > 80)
 
